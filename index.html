@@ -5,7 +5,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>procedurality</title>
     <style>
-        :is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}
+        :is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;} .contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -51,30 +113,120 @@
           </p>
     </section>
 <!-- Contact form -->
-    <section class="contact-form">
+
+<p> ________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+</center>
+    </main>
+<section class="contact-form">
         <div class="form-container">
             <h2>Your Details</h2>
             <form action="https://formsubmit.co/proceduralitytutorials@gmail.com" method="POST">
                 <input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
 <center>
-                <label for="name">Name⠀⠀⠀⠀⠀⠀⠀⠀: </label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 </center>
 <center>
-                <label for="email">Email⠀⠀⠀⠀⠀⠀⠀⠀: </label>
+                <label for="email">email:</label>
                 <input type="email" id="email" name="email" required>
 </center>
 <center>
-                <label for="phone">Phone (optional)⠀: </label>
+                <label for="phone">Phone (optional):</label>
                 <input type="tel" id="phone" name="phone">
 </center>
 <center>
-                <label for="Subject">Subject (optional): </label>
+                <label for="Do you have a phone? If yes, what's the brand?">Do you have a phone? If yes, what's the brand?</label>
+        <select id="Do you have a phone? If yes, what's the brand?" name="Do you have a phone? If yes, what's the brand?">
+            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+          <option value="Yes, samsung vivo">Yes, samsung vivo</option>
+          <option value="Yes, samsung phone">Yes, samsung phone</option>
+          <option value="Yes, apple">Yes, apple</option>
+          <option value="Yes, classic Nokia">Yes, classic nokia</option>
+          <option value="Yes, Nokia">Yes, nokia</option>
+          <option value="Yes, android">Yes, android</option>
+          <option value="Others...">Others...</option>
+          <option value="No">No</option>
+        </select>
+</center>
+<center>
+                <label for="Other devices...">Other devices...</label>
+        <select id="Other devices..." name="Other devices...">
+            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+          <option value="Windows 11">Windows 11</option>
+          <option value="Windows 10">Windows 10</option>
+          <option value="Windows 9">Windows 9</option>
+          <option value="Windows 8">Windows 8</option>
+          <option value="Windows 7">Windows 7</option>
+          <option value="Windows vista">Windows vista</option>
+          <option value="Windows xp">Windows xp</option>
+          <option value="Windows 0-5">Windows 0-5</option>
+          <option value="MacBooks">MacBooks (regular/pro)</option>
+          <option value="MacBooks Air">Windows 0-9</option>
+          <option value="Ipad">Ipad</option>
+          <option value="smart refridgerator">smart refridgerator</option>
+          <option value="Apple vision">Apple vision (regular/pro)</option>
+          <option value="smartwatch">smartwatch</option>
+          <option value="berry">berry</option>
+          <option value="Apple TV">Apple TV</option>
+          <option value="samsung TV">samsung TV</option>
+          <option value="Galaxy tab S series">Galaxy tab S series</option>
+          <option value="Galaxy tab E series">Galaxy tab E series</option>
+          <option value="Galaxy tab pro series">Galaxy tab pro series</option>
+          <option value="Galaxy (tab) view series">Galaxy (tab) view series</option>
+          <option value="Galaxy tab active series">Galaxy tab active series</option>
+          <option value="Amazon device">Amazon device</option>
+          <option value="Arcade">Arcade</option>
+          <option value="Playstation4-6">Playstation4-6</option>
+          <option value="Playstation0-3">Playstation0-3</option>
+          <option value="Others...">Others...</option>
+          <option value="I only use a phone (none)">I only use a phone (none)</option>
+        </select>
+</center>
+<center>
+         <label for="Do you use someone's device to do personal activities?">Do you use someone's device to do personal activities?</label>
+        <select id="Do you use someone's device to do personal activities?" name="Do you use someone's device to do personal activities?">
+            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Kinda">Kinda (e.g: it was originally for my husband etc...)</option>
+</center>
+<center>
+        <label for="Time zone">Time zone</label>
+        <select id="Time zone" name="Time zone">
+            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+        <option value="UTC−12:00">UTC−12:00</option>
+        <option value="UTC−11:00">UTC−11:00</option>
+        <option value="UTC−10:00">UTC−10:00</option>
+        <option value="UTC−09:00">UTC−09:00</option>
+        <option value="UTC−08:00">UTC−08:00</option>
+        <option value="UTC−07:00">UTC−07:00</option>
+        <option value="UTC−06:00">UTC−06:00</option>
+        <option value="UTC−05:00">UTC−05:00</option>
+        <option value="UTC−03:00">UTC−03:00</option>
+        <option value="UTC−02:00">UTC−02:00</option>
+        <option value="UTC−01:00">UTC−01:00</option>
+        <option value="UTC±00:00">UTC±00:00 (GMT)</option>
+        <option value="UTC+14:00">UTC+14:00</option>
+        <option value="UTC+13:00">UTC+13:00</option>
+        <option value="UTC+12:00">UTC+12:00</option>
+        <option value="UTC+11:00">UTC+11:00</option>
+        <option value="UTC+10:00">UTC+10:00</option>
+        <option value="UTC+09:00">UTC+09:00</option>
+        <option value="UTC+08:00">UTC+08:00</option>
+        <option value="UTC+07:00">UTC+07:00</option>
+        <option value="UTC+06:00">UTC+06:00</option>
+        <option value="UTC+05:00">UTC+05:00</option>
+        <option value="UTC+03:00">UTC+03:00</option>
+        <option value="UTC+02:00">UTC+02:00</option>
+        <option value="UTC+01:00">UTC+01:00</option>
+</center>
+<center>
+                <label for="Subject">Subject (optional):</label>
                 <input type="Subject" id="Subject" name="Subject">
 </center>
 <center>
-                <label for="message">Message⠀⠀⠀⠀⠀⠀: </label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 </center>
 <center>
@@ -91,12 +243,9 @@
         </address>
     </section>
 <center>
-<p> NOTE: please click the "submit" button two times if it's loading for more than 2 seconds! </p>
-</center>
+<p> NOTE: please click the "submit" button four times if it's loading for more than 2 seconds! </p>
 <p> ________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 </center>
-    </main>
-
     <footer>
         <center>
              <p>the website is still in work in progress.</p>
