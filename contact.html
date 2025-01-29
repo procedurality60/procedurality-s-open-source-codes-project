@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>procedurality</title> <style>
-        :is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;} .contact-form {
+    <title>procedurality</title>  <style>
+       
+.contact-form {
     padding: 40px 0;
     margin: 0 10px;
 }
@@ -66,43 +67,84 @@ footer {
     text-align: center;
     background-color: #333;
     color: white;
-} </style>
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.responsive-logo {
+    width: 10%;
+}
+
+@media (max-width: 786px) {
+    .form-container{
+        max-width: 90%;
+        padding: 15px;
+    }
+    .submit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 20px 0;
+    }
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .contact-info {
+        padding: 30px 0;
+    }
+    footer {
+        padding: 15px;
+    }
+}
+    </style>
 </head>
 <body>
 <header>
    <center> <h1>procedurality</h1> </center>
-   <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  window.location.href = "https://forms.gle/oRNp8xeekdjwGyDA6"; // Replace with your mobile site URL
-}
-
-</script>
+  
       <p> ________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>  
 <img src="Screenshot 2024.png" width="100px">
 <p> ________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 
-    <section class="contact-form">
+    <center>
+        <h1>Get in Touch</h1>
+        <p>
+          We're here to answer any questions you may have.
+          </p>
+    </section>
+<!-- Contact form -->
+</center>
+    </main>
+<section class="contact-form">
         <div class="form-container">
             <h2>Your Details</h2>
             <form action="https://formsubmit.co/proceduralitytutorials@gmail.com" method="POST">
                 <input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
 <center>
-                <label for="name">Name: </label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 </center>
 <center>
-                <label for="email">email: </label>
+                <label for="email">email:</label>
                 <input type="email" id="email" name="email" required>
 </center>
 <center>
-                <label for="phone">Phone (optional): </label>
+                <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone">
 </center>
 <center>
-                <label for="Do you have a phone? If yes, what's the brand?">Do you have a phone? If yes, what's the brand?</label>
-        <select id="Do you have a phone? If yes, what's the brand?" name="Do you have a phone? If yes, what's the brand?">
-            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+                        <label for="Do you have a phone? If yes, what's the brand?">Do you have a phone? If yes, what's the brand?</label>
+        <select id="Do you have a phone? If yes, what's the brand?" name="Do you have a phone? If yes, what's the brand[]" multiple>
           <option value="Yes, samsung vivo">Yes, samsung vivo</option>
           <option value="Yes, samsung phone">Yes, samsung phone</option>
           <option value="Yes, apple">Yes, apple</option>
@@ -114,38 +156,56 @@ footer {
         </select>
 </center>
 <center>
-                <label for="Other devices...">Other devices...</label>
-        <select id="Other devices..." name="Other devices...">
-            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
-          <option value="Windows 11">Windows 11</option>
-          <option value="Windows 10">Windows 10</option>
-          <option value="Windows 9">Windows 9</option>
-          <option value="Windows 8">Windows 8</option>
-          <option value="Windows 7">Windows 7</option>
-          <option value="Windows vista">Windows vista</option>
-          <option value="Windows xp">Windows xp</option>
-          <option value="Windows 0-5">Windows 0-5</option>
-          <option value="MacBooks">MacBooks (regular/pro)</option>
-          <option value="MacBooks Air">Windows 0-9</option>
-          <option value="Ipad">Ipad</option>
-          <option value="smart refridgerator">smart refridgerator</option>
-          <option value="Apple vision">Apple vision (regular/pro)</option>
-          <option value="smartwatch">smartwatch</option>
-          <option value="berry">berry</option>
-          <option value="Apple TV">Apple TV</option>
-          <option value="samsung TV">samsung TV</option>
-          <option value="Galaxy tab S series">Galaxy tab S series</option>
-          <option value="Galaxy tab E series">Galaxy tab E series</option>
-          <option value="Galaxy tab pro series">Galaxy tab pro series</option>
-          <option value="Galaxy (tab) view series">Galaxy (tab) view series</option>
-          <option value="Galaxy tab active series">Galaxy tab active series</option>
-          <option value="Amazon device">Amazon device</option>
-          <option value="Arcade">Arcade</option>
-          <option value="Playstation4-6">Playstation4-6</option>
-          <option value="Playstation0-3">Playstation0-3</option>
-          <option value="Others...">Others...</option>
-          <option value="I only use a phone (none)">I only use a phone (none)</option>
-        </select>
+                 <label for="Other devices...">Other devices...</label>
+    <select id="Other devices..." name="Other devices[]" multiple>
+        <option value="Windows 11">Windows 11</option>
+        <option value="Windows 10">Windows 10</option>
+        <option value="Windows 9">Windows 9</option>
+        <option value="Windows 8">Windows 8</option>
+        <option value="Windows 7">Windows 7</option>
+        <option value="Windows vista">Windows vista</option>
+        <option value="Windows xp">Windows xp</option>
+        <option value="Windows 0-5">Windows 0-5</option>
+        <option value="MacBooks">MacBooks (regular/pro)</option>
+        <option value="MacBooks Air">MacBooks Air</option>
+        <option value="Ipad">Ipad</option>
+        <option value="smart refrigerator">Smart Refrigerator</option>
+        <option value="Apple vision">Apple Vision (regular/pro)</option>
+        <option value="smartwatch">Smartwatch</option>
+        <option value="berry">Berry</option>
+        <option value="Apple TV">Apple TV</option>
+        <option value="Samsung TV">Samsung TV</option>
+        <option value="Galaxy tab S series">Galaxy Tab S Series</option>
+        <option value="Galaxy tab E series">Galaxy Tab E Series</option>
+        <option value="Galaxy tab pro series">Galaxy Tab Pro Series</option>
+        <option value="Galaxy tab view series">Galaxy Tab View Series</option>
+        <option value="Galaxy tab active series">Galaxy Tab Active Series</option>
+        <option value="Amazon device">Amazon Device</option>
+        <option value="Arcade">Arcade</option>
+        <option value="Playstation4-6">PlayStation 4-6</option>
+        <option value="Playstation0-3">PlayStation 0-3</option>
+        <option value="Kindle">Kindle</option>
+        <option value="Pad">Pad</option>
+        <option value="Nintendo switch">Nintendo Switch</option>
+        <option value="Wii">Wii</option>
+        <option value="linux">linux machine/system</option>
+        <option value="Nasa supercomputer">Nasa supercomputer</option>
+        <option value="Google supercomputer">Google supercomputer</option>
+        <option value="Apple supercomputer">Apple supercomputer</option>
+        <option value="Linux supercomputer">Linux supercomputer</option>
+        <option value="supercomputer">supercomputer</option>
+        <option value="Tesla car">Tesla car</option>
+        <option value="Toyota car">Toyota car</option>
+        <option value="Hyundai car">Hyundai car</option>
+        <option value="Honda car">Honda car</option>
+        <option value="Mercedes Benz">Mercedes Benz</option>
+        <option value="Racecar">Racecar</option>
+        <option value="Smartcar">smartcar</option>
+        <option value="Linux car">linux car</option>
+        <option value="Mac studio">Mac studio</option>
+        <option value="Others...">Others...</option>
+        <option value="I only use a phone (none)">I only use a phone (none)</option>
+    </select>
 </center>
 <center>
          <label for="Do you use someone's device to do personal activities?">Do you use someone's device to do personal activities?</label>
@@ -154,13 +214,12 @@ footer {
         <option value="Yes">Yes</option>
         <option value="No">No</option>
         <option value="Kinda">Kinda (e.g: it was originally for my husband etc...)</option>
+        </select>
 </center>
 <center>
         <!-- All countries -->
-<!-- Code and Name -->
-<label for="country">country</label>
-<select id="form-select" autocomplete="country" id="country" name="country">
-    <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+<label for="country">Country</label>
+<select id="country" name="country" multiple size="10">
     <option value="AF" data-values="AFG">Afghanistan</option>
     <option value="AX" data-values="ALA">Åland Islands</option>
     <option value="AL" data-values="ALB">Albania</option>
@@ -187,7 +246,7 @@ footer {
     <option value="BJ" data-values="BEN">Benin</option>
     <option value="BM" data-values="BMU">Bermuda</option>
     <option value="BT" data-values="BTN">Bhutan</option>
-    <option value="BO" data-values="BOL">Bolivia (Plurinational State of)</option>
+    <option value="BO" data-values="BOL">Bolivia</option>
     <option value="BA" data-values="BIH">Bosnia and Herzegovina</option>
     <option value="BW" data-values="BWA">Botswana</option>
     <option value="BV" data-values="BVT">Bouvet Island</option>
@@ -212,7 +271,7 @@ footer {
     <option value="CO" data-values="COL">Colombia</option>
     <option value="KM" data-values="COM">Comoros</option>
     <option value="CG" data-values="COG">Congo</option>
-    <option value="CD" data-values="COD">Congo, Democratic Republic of the</option>
+    <option value="CD" data-values="COD">Congo, Democratic Republic</option>
     <option value="CK" data-values="COK">Cook Islands</option>
     <option value="CR" data-values="CRI">Costa Rica</option>
     <option value="HR" data-values="HRV">Croatia</option>
@@ -220,7 +279,6 @@ footer {
     <option value="CW" data-values="CUW">Curaçao</option>
     <option value="CY" data-values="CYP">Cyprus</option>
     <option value="CZ" data-values="CZE">Czech Republic</option>
-    <option value="CI" data-values="CIV">Côte d'Ivoire</option>
     <option value="DK" data-values="DNK">Denmark</option>
     <option value="DJ" data-values="DJI">Djibouti</option>
     <option value="DM" data-values="DMA">Dominica</option>
@@ -231,192 +289,11 @@ footer {
     <option value="GQ" data-values="GNQ">Equatorial Guinea</option>
     <option value="ER" data-values="ERI">Eritrea</option>
     <option value="EE" data-values="EST">Estonia</option>
-    <option value="SZ" data-values="SWZ">Eswatini (Swaziland)</option>
+    <option value="SZ" data-values="SWZ">Eswatini</option>
     <option value="ET" data-values="ETH">Ethiopia</option>
-    <option value="FK" data-values="FLK">Falkland Islands (Malvinas)</option>
-    <option value="FO" data-values="FRO">Faroe Islands</option>
-    <option value="FJ" data-values="FJI">Fiji</option>
-    <option value="FI" data-values="FIN">Finland</option>
-    <option value="FR" data-values="FRA">France</option>
-    <option value="GF" data-values="GUF">French Guiana</option>
-    <option value="PF" data-values="PYF">French Polynesia</option>
-    <option value="TF" data-values="ATF">French Southern Territories</option>
-    <option value="GA" data-values="GAB">Gabon</option>
-    <option value="GM" data-values="GMB">Gambia</option>
-    <option value="GE" data-values="GEO">Georgia</option>
-    <option value="DE" data-values="DEU">Germany</option>
-    <option value="GH" data-values="GHA">Ghana</option>
-    <option value="GI" data-values="GIB">Gibraltar</option>
-    <option value="GR" data-values="GRC">Greece</option>
-    <option value="GL" data-values="GRL">Greenland</option>
-    <option value="GD" data-values="GRD">Grenada</option>
-    <option value="GP" data-values="GLP">Guadeloupe</option>
-    <option value="GU" data-values="GUM">Guam</option>
-    <option value="GT" data-values="GTM">Guatemala</option>
-    <option value="GG" data-values="GGY">Guernsey</option>
-    <option value="GN" data-values="GIN">Guinea</option>
-    <option value="GW" data-values="GNB">Guinea-Bissau</option>
-    <option value="GY" data-values="GUY">Guyana</option>
-    <option value="HT" data-values="HTI">Haiti</option>
-    <option value="HM" data-values="HMD">Heard Island and Mcdonald Islands</option>
-    <option value="HN" data-values="HND">Honduras</option>
-    <option value="HK" data-values="HKG">Hong Kong</option>
-    <option value="HU" data-values="HUN">Hungary</option>
-    <option value="IS" data-values="ISL">Iceland</option>
-    <option value="IN" data-values="IND">India</option>
-    <option value="ID" data-values="IDN">Indonesia</option>
-    <option value="IR" data-values="IRN">Iran</option>
-    <option value="IQ" data-values="IRQ">Iraq</option>
-    <option value="IE" data-values="IRL">Ireland</option>
-    <option value="IM" data-values="IMN">Isle of Man</option>
-    <option value="IL" data-values="ISR">Israel</option>
-    <option value="IT" data-values="ITA">Italy</option>
-    <option value="JM" data-values="JAM">Jamaica</option>
-    <option value="JP" data-values="JPN">Japan</option>
-    <option value="JE" data-values="JEY">Jersey</option>
-    <option value="JO" data-values="JOR">Jordan</option>
-    <option value="KZ" data-values="KAZ">Kazakhstan</option>
-    <option value="KE" data-values="KEN">Kenya</option>
-    <option value="KI" data-values="KIR">Kiribati</option>
-    <option value="KP" data-values="PRK">Korea, North</option>
-    <option value="KR" data-values="KOR">Korea, South</option>
-    <option value="XK" data-values="XKX">Kosovo</option>
-    <option value="KW" data-values="KWT">Kuwait</option>
-    <option value="KG" data-values="KGZ">Kyrgyzstan</option>
-    <option value="LA" data-values="LAO">Lao People's Democratic Republic</option>
-    <option value="LV" data-values="LVA">Latvia</option>
-    <option value="LB" data-values="LBN">Lebanon</option>
-    <option value="LS" data-values="LSO">Lesotho</option>
-    <option value="LR" data-values="LBR">Liberia</option>
-    <option value="LY" data-values="LBY">Libya</option>
-    <option value="LI" data-values="LIE">Liechtenstein</option>
-    <option value="LT" data-values="LTU">Lithuania</option>
-    <option value="LU" data-values="LUX">Luxembourg</option>
-    <option value="MO" data-values="MAC">Macao</option>
-    <option value="MK" data-values="MKD">Macedonia North</option>
-    <option value="MG" data-values="MDG">Madagascar</option>
-    <option value="MW" data-values="MWI">Malawi</option>
-    <option value="MY" data-values="MYS">Malaysia</option>
-    <option value="MV" data-values="MDV">Maldives</option>
-    <option value="ML" data-values="MLI">Mali</option>
-    <option value="MT" data-values="MLT">Malta</option>
-    <option value="MH" data-values="MHL">Marshall Islands</option>
-    <option value="MQ" data-values="MTQ">Martinique</option>
-    <option value="MR" data-values="MRT">Mauritania</option>
-    <option value="MU" data-values="MUS">Mauritius</option>
-    <option value="YT" data-values="MYT">Mayotte</option>
-    <option value="MX" data-values="MEX">Mexico</option>
-    <option value="FM" data-values="FSM">Micronesia</option>
-    <option value="MD" data-values="MDA">Moldova</option>
-    <option value="MC" data-values="MCO">Monaco</option>
-    <option value="MN" data-values="MNG">Mongolia</option>
-    <option value="ME" data-values="MNE">Montenegro</option>
-    <option value="MS" data-values="MSR">Montserrat</option>
-    <option value="MA" data-values="MAR">Morocco</option>
-    <option value="MZ" data-values="MOZ">Mozambique</option>
-    <option value="MM" data-values="MMR">Myanmar (Burma)</option>
-    <option value="NA" data-values="NAM">Namibia</option>
-    <option value="NR" data-values="NRU">Nauru</option>
-    <option value="NP" data-values="NPL">Nepal</option>
-    <option value="NL" data-values="NLD">Netherlands</option>
-    <option value="AN" data-values="ANT">Netherlands Antilles</option>
-    <option value="NC" data-values="NCL">New Caledonia</option>
-    <option value="NZ" data-values="NZL">New Zealand</option>
-    <option value="NI" data-values="NIC">Nicaragua</option>
-    <option value="NE" data-values="NER">Niger</option>
-    <option value="NG" data-values="NGA">Nigeria</option>
-    <option value="NU" data-values="NIU">Niue</option>
-    <option value="NF" data-values="NFK">Norfolk Island</option>
-    <option value="MP" data-values="MNP">Northern Mariana Islands</option>
-    <option value="NO" data-values="NOR">Norway</option>
-    <option value="OM" data-values="OMN">Oman</option>
-    <option value="PK" data-values="PAK">Pakistan</option>
-    <option value="PW" data-values="PLW">Palau</option>
-    <option value="PS" data-values="PSE">Palestine</option>
-    <option value="PA" data-values="PAN">Panama</option>
-    <option value="PG" data-values="PNG">Papua New Guinea</option>
-    <option value="PY" data-values="PRY">Paraguay</option>
-    <option value="PE" data-values="PER">Peru</option>
-    <option value="PH" data-values="PHL">Philippines</option>
-    <option value="PN" data-values="PCN">Pitcairn Islands</option>
-    <option value="PL" data-values="POL">Poland</option>
-    <option value="PT" data-values="PRT">Portugal</option>
-    <option value="PR" data-values="PRI">Puerto Rico</option>
-    <option value="QA" data-values="QAT">Qatar</option>
-    <option value="RE" data-values="REU">Reunion</option>
-    <option value="RO" data-values="ROM">Romania</option>
-    <option value="RU" data-values="RUS">Russian Federation</option>
-    <option value="RW" data-values="RWA">Rwanda</option>
-    <option value="BL" data-values="BLM">Saint Barthelemy</option>
-    <option value="SH" data-values="SHN">Saint Helena</option>
-    <option value="KN" data-values="KNA">Saint Kitts and Nevis</option>
-    <option value="LC" data-values="LCA">Saint Lucia</option>
-    <option value="MF" data-values="MAF">Saint Martin</option>
-    <option value="PM" data-values="SPM">Saint Pierre and Miquelon</option>
-    <option value="VC" data-values="VCT">Saint Vincent and the Grenadines</option>
-    <option value="WS" data-values="WSM">Samoa</option>
-    <option value="SM" data-values="SMR">San Marino</option>
-    <option value="ST" data-values="STP">Sao Tome and Principe</option>
-    <option value="SA" data-values="SAU">Saudi Arabia</option>
-    <option value="SN" data-values="SEN">Senegal</option>
-    <option value="RS" data-values="SRB">Serbia</option>
-    <option value="CS" data-values="SCG">Serbia and Montenegro</option>
-    <option value="SC" data-values="SYC">Seychelles</option>
-    <option value="SL" data-values="SLE">Sierra Leone</option>
-    <option value="SG" data-values="SGP">Singapore</option>
-    <option value="SX" data-values="SXM">Sint Maarten</option>
-    <option value="SK" data-values="SVK">Slovakia</option>
-    <option value="SI" data-values="SVN">Slovenia</option>
-    <option value="SB" data-values="SLB">Solomon Islands</option>
-    <option value="SO" data-values="SOM">Somalia</option>
-    <option value="ZA" data-values="ZAF">South Africa</option>
-    <option value="GS" data-values="SGS">South Georgia and the South Sandwich Islands</option>
-    <option value="SS" data-values="SSD">South Sudan</option>
-    <option value="ES" data-values="ESP">Spain</option>
-    <option value="LK" data-values="LKA">Sri Lanka</option>
-    <option value="SD" data-values="SDN">Sudan</option>
-    <option value="SR" data-values="SUR">Suriname</option>
-    <option value="SJ" data-values="SJM">Svalbard and Jan Mayen</option>
-    <option value="SE" data-values="SWE">Sweden</option>
-    <option value="CH" data-values="CHE">Switzerland</option>
-    <option value="SY" data-values="SYR">Syria</option>
-    <option value="TW" data-values="TWN">Taiwan</option>
-    <option value="TJ" data-values="TJK">Tajikistan</option>
-    <option value="TZ" data-values="TZA">Tanzania</option>
-    <option value="TH" data-values="THA">Thailand</option>
-    <option value="TL" data-values="TLS">Timor-Leste</option>
-    <option value="TG" data-values="TGO">Togo</option>
-    <option value="TK" data-values="TKL">Tokelau</option>
-    <option value="TO" data-values="TON">Tonga</option>
-    <option value="TT" data-values="TTO">Trinidad and Tobago</option>
-    <option value="TN" data-values="TUN">Tunisia</option>
-    <option value="TR" data-values="TUR">Turkey (Türkiye)</option>
-    <option value="TM" data-values="TKM">Turkmenistan</option>
-    <option value="TC" data-values="TCA">Turks and Caicos Islands</option>
-    <option value="TV" data-values="TUV">Tuvalu</option>
-    <option value="UM" data-values="UMI">U.S. Outlying Islands</option>
-    <option value="UG" data-values="UGA">Uganda</option>
-    <option value="UA" data-values="UKR">Ukraine</option>
-    <option value="AE" data-values="ARE">United Arab Emirates</option>
-    <option value="GB" data-values="GBR">United Kingdom</option>
-    <option value="US" data-values="USA">United States</option>
-    <option value="UY" data-values="URY">Uruguay</option>
-    <option value="UZ" data-values="UZB">Uzbekistan</option>
-    <option value="VU" data-values="VUT">Vanuatu</option>
-    <option value="VA" data-values="VAT">Vatican City Holy See</option>
-    <option value="VE" data-values="VEN">Venezuela</option>
-    <option value="VN" data-values="VNM">Vietnam</option>
-    <option value="VG" data-values="VGB">Virgin Islands, British</option>
-    <option value="VI" data-values="VIR">Virgin Islands, U.S</option>
-    <option value="WF" data-values="WLF">Wallis and Futuna</option>
-    <option value="EH" data-values="ESH">Western Sahara</option>
-    <option value="YE" data-values="YEM">Yemen</option>
-    <option value="ZM" data-values="ZMB">Zambia</option>
-    <option value="ZW" data-values="ZWE">Zimbabwe</option>
 </select>
-<!-- total - 252 -->
-
 </center>
+
 <center>
                 <label for="Subject">Subject:</label>
                 <input type="Subject" id="Subject" name="Subject">
@@ -431,8 +308,8 @@ footer {
         </div>
     </section>
 </center>
+<a href="https://forms.gle/oRNp8xeekdjwGyDA6">procedurality@altmails.com</a>
     <section class="contact-info">
-
         <address>
             <br>
         </address>
@@ -443,7 +320,11 @@ footer {
 <p> NOTE: Reviews are usually between 8 PM to 9PM West Indonesian time. </p>
 </center>
 <p> ________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p> <center>
+    <footer>
     <!-- in JG, replace the "index.html" to "othersforfun.html" -->
-<a href="index.html">menu</a>
-</center>
+<a href="index.html">Home</a>
+ <p>the website is still in work in progress.</p>
+        <p> 2024 proceduralitytutorials@gmail.com. everything is protected.</p>
+    </center>
+</footer>
 </html>
