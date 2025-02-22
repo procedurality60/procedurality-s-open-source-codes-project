@@ -1,0 +1,388 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>procedurality</title> 
+    <style>
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar a, .navbar .dropbtn {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            background: none;
+           background-image: url('REVAI.png'); /* Remove background image */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #414141;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: black; /* Ensure text visibility */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: white;
+        }
+
+        .sidebar {
+            width: 3cm; /* Set the width of the sidebar to 3 centimeters */
+            background-color: white; /* Sidebar background color */
+            padding-top: 60px; /* Space for fixed navbar */
+            height: 100vh; /* Full height */
+            position: fixed; /* Fixed Sidebar (stay in place) */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for better distinction */
+        }
+
+        .sidebar a, .dropdown .dropbtn {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black; /* Changed to black for better contrast */
+            display: block;
+        }
+
+        .sidebar a:hover, .dropdown:hover .dropbtn {
+            background-color: #f7f7f7; /* Changed to light gray for better visibility */
+        }
+
+        .main-content {
+            margin-left: 3cm; /* Same width as the sidebar */
+            margin-top: 60px; /* Space for fixed navbar */
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Your existing styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-form {
+            padding: 40px 0;
+            margin: 0 10px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .form-container {
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-container input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            resize: vertical;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #0dac30;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            background-image: #f1f1f1; /*url('Screenshot09.jpg'); */
+        }
+
+        .footer-2 {
+            display: flex;
+            padding: 20px;
+            color: black;
+        }
+
+        .footer-2 p {
+            margin: 0;
+        }
+
+        .center-text {
+            text-align: center;
+            margin-left: 20%;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+
+        .responsive-logo {
+            width: 20%;
+        }
+
+        @media (max-width: 786px) {
+            .form-container {
+                max-width: 90%;
+                padding: 15px;
+            }
+            .submit-button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form {
+                padding: 20px 0;
+            }
+            .form-container {
+                max-width: 100%;
+                padding: 10px;
+            }
+            .contact-info {
+                padding: 30px 0;
+            }
+            footer {
+                padding: 15px;
+                background-image: #f1f1f1 /*url('Screenshot09.jpg');*/
+            }
+            .footer {
+                background-color: black;
+                color: white;
+                padding: 20px;
+            }
+            .footer h2, .footer p {
+                text-align: left;
+            }
+            .footer input[type="text"], .footer input[type="email"] {
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                display: block;
+            }
+            .footer input[type="submit"] {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: block;
+            }
+            .container {
+                display: flex;
+            }
+            .main-content {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- Account dashboard -->
+        <a href="freeaccount.html">Dashboard</a>
+        <a href="freeaccount.html">⠀⠀⠀⠀⠀⠀</a>
+        <a href="freeaccount.html">⠀⠀⠀⠀⠀⠀</a>
+        <!-- blog -->
+        <a href="freeaccount.html">❗</a>
+        <a href="freeaccount.html"><img src="Screenshot202502.png" alt="Account settings"></a>
+        <div class="dropdown">
+            <button class="dropbtn">Copilot
+                <i class="fa fa-caret-down"></i>
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="blog.html">Updates</a>
+            </div>
+            </div>
+    </div>
+        
+    <div class="sidebar">
+        <a href="blog.html"><hr> Updates <hr></a>
+        <a href="blog.html">Day 1:
+        Welcome to 
+        blog!</a>
+        <a href="blog.html">Max: 10</a>
+       <a href="blog.html"><hr></a>
+        <center>
+        <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='blog.html';">Blog</button> </center>
+    </div>
+    <div class="main-content">
+    
+</head>
+<body>
+<header>
+    <p> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀🛜 Wifi connected  </p>
+   
+<img src="Screenshot 2024.png" class="responsive-logo"> 
+      <main>
+       <hr>
+        <h1>Home</h1>
+       <p> ✨ introduction to procedurality </p>
+        <center>
+    </section>
+<!-- Contact form -->
+</center>
+    </main>
+    <div class="container">
+    <section class="contact-form">
+        <div class="form-container">
+            <a href="freeaccount.html">Introduction to procedurality</a>
+            <p> Get started with procedurality in less than a hour </p>
+</div>
+</section>
+<section class="contact-form">
+        <div class="form-container">
+            <a href="https://character.ai/chat/3dCjfOhLWEAxz53quFSP_DFIQ-Ms2ZYUBbtsj3646ec"> Procedurality Copilot</a>
+            <p>Contact us faster than ever!</p>
+            </div>
+        </section>
+    </div>
+</section>
+<p><> Get started with using our apps and extensions </p>
+        <div class="container">
+    <section class="contact-form">
+        <div class="form-container">
+            <a href="freeaccount.html">Introduction to procedurality</a>
+            <p> Get started with procedurality in less than a hour </p>
+</div>
+</section>
+<section class="contact-form">
+        <div class="form-container">
+            <a href="https://character.ai/chat/3dCjfOhLWEAxz53quFSP_DFIQ-Ms2ZYUBbtsj3646ec"> Procedurality Copilot for business</a>
+            <p>Chat like a CEO ---------------(free with Elite)</p>
+            </div>
+        </section>
+    </div>
+</section>
+<p> ✂️ Recommendation tools </p>
+<div class="container">
+    <section class="contact-form">
+        <div class="form-container">
+            <a href="https://mega.io/">mega.io</a>
+            <p> meet the boss of cloud storage </p>
+</div>
+</section>
+<section class="contact-form">
+        <div class="form-container">
+            <a href="c.ai"> c.ai </a>
+           <p><button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='c.ai';">official website menu</button>
+
+            <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='book.character.ai';">editor tutorial book</button> </p>
+            <p> make your own AI in c.ai! (15+ required) </p> 
+            </div>
+        </section>
+    </div>
+</section>
+
+
+    <hr>
+    <!-- in JG, replace the "index.html" to "othersforfun.html" -->
+    <center>
+<p>
+ <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='index.html';">Home</button>
+
+   <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='pay.html';">Payment</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border
+     : 0px; color: white; border-radius: 5px;" onclick="location.href='contact.html';">Contact</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='blog.html';">Blog</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='index.html';">install</button>
+      </p>
+    </center>
+ <p>Subscribe to our newsletter to receive updates:</p>
+ <div class="footer-2">
+        <form action="https://formsubmit.co/proceduralitytutorials@gmail.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+        <div class="center-text">
+            <p>this website is far from perfection.</p>
+            <p> 2024 proceduralitytutorials@gmail.com. All rights reserved.</p>
+        </div>
+ </div>
+
+</html>

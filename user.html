@@ -1,0 +1,524 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>procedurality</title> 
+    <style>
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+     background-image: url('Screenshot09.jpg');
+}
+
+.footer-2 {
+    display: flex;
+    padding: 20px;
+    color: #f1f1f1;
+} 
+
+.footer-2 p {
+    margin: 0;
+}
+
+ .center-text {
+    text-align: center;
+}
+
+.center-text {
+    margin-left: 20%;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.responsive-logo {
+    width: 20%;
+}
+
+@media (max-width: 786px) {
+    .form-container{
+        max-width: 90%;
+        padding: 15px;
+    }
+    .submit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 20px 0;
+    }
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .contact-info {
+        padding: 30px 0;
+    }
+    footer {
+        padding: 15px;
+        background-image: url('Screenshot09.jpg');
+    }
+    
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .footer h2, .footer p {
+            text-align: left; /* Aligning header and paragraph to the left */
+        }
+        .footer input[type="text"], .footer input[type="email"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block; /* Ensure inputs are displayed as blocks */
+        }
+        .footer input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block; /* Ensure submit button is displayed as a block */
+        }
+         .container {
+            display: flex;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .aside {
+            flex: 0 0 200px; /* Fixed width for the aside element */
+            background-color: white; /* Changed to white */
+            padding: 20px; /* Optional: padding for spacing inside the aside */
+        }
+}
+    </style>
+    <footer>
+</head>
+<body>
+<header>
+    <p> ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀🛜 Wifi connected  </p>
+   
+<img src="Screenshot 2024.png" class="responsive-logo"> 
+      <main>
+        </footer>
+
+    <center>
+        <h1>Sign up/Log In (Free)</h1>
+    </section>
+<!-- Contact form -->
+</center>
+    </main>
+<section class="contact-form">
+        <div class="form-container">
+            <form action="https://formsubmit.co/proceduralitytutorials@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/freeaccount.html">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+<center>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+</center>
+<center>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+</center>
+<center>
+  <label for="Password">Password:</label>
+  <input type="Password" placeholder="length minimum: 2" id="Password" name="Password" required="" data-ddg-inputtype="credentials.password.new" data-ddg-autofill="true" autocomplete="new-password" style="background-size: auto 24px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important; background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsPSIjMDAwIiBkPSJNOC4wNDcgNC42MjVDNy45MzcgNC4xMjUgNy44NjIgNCA3LjUgNGMtLjM2MiAwLS40MzguMTI1LS41NDcuNjI1LS4wNjguMzEtLjE3NyAxLjMzOC0uMjUxIDIuMDc3LS43MzguMDc0LTEuNzY3LjE4My0yLjA3Ny4yNTEtLjUuMTEtLjYyNS4xODQtLjYyNS41NDcgMCAuMzYyLjEyNS40MzcuNjI1LjU0Ny4zMS4wNjcgMS4zMzYuMTc3IDIuMDc0LjI1LjA3My43NjcuMTg1IDEuODQyLjI1NCAyLjA3OC4xMS4zNzUuMTg1LjYyNS41NDcuNjI1LjM2MiAwIC40MzgtLjEyNS41NDctLjYyNS4wNjgtLjMxLjE3Ny0xLjMzNi4yNS0yLjA3NC43NjctLjA3MyAxLjg0Mi0uMTg1IDIuMDc4LS4yNTQuMzc1LS4xMS42MjUtLjE4NS42MjUtLjU0NyAwLS4zNjMtLjEyNS0uNDM4LS42MjUtLjU0Ny0uMzEtLjA2OC0xLjMzOS0uMTc3LTIuMDc3LS4yNTEtLjA3NC0uNzM5LS4xODMtMS43NjctLjI1MS0yLjA3N1oiLz4KICAgIDxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik0xNC42ODEgNS4xOTljLS43NjYgMC0xLjQ4Mi4yMS0yLjA5My41NzhhLjYzNi42MzYgMCAwIDEtLjY1NS0xLjA5IDUuMzQgNS4zNCAwIDEgMSAxLjMwMiA5LjcyMmwtLjc3NS43NzZhLjYzNi42MzYgMCAwIDEtLjQ1LjE4NmgtMS4zOTh2MS42NWMwIC40OTMtLjQuODkzLS44OTMuODkzSDguNTc4djEuMTQxYzAgLjQ5NC0uNC44OTMtLjg5NC44OTNINC42MzZBLjYzNi42MzYgMCAwIDEgNCAxOS4zMTNWMTYuMjZjMC0uMTY5LjA2Ny0uMzMuMTg2LS40NWw1LjU2Mi01LjU2MmEuNjM2LjYzNiAwIDEgMSAuOS45bC01LjM3NiA1LjM3NXYyLjE1M2gyLjAzNHYtMS4zOTljMC0uMzUuMjg1LS42MzYuNjM2LS42MzZIOS4zNHYtMS45MDdjMC0uMzUxLjI4NC0uNjM2LjYzNS0uNjM2aDEuNzcxbC44NjQtLjg2M2EuNjM2LjYzNiAwIDAgMSAuNjY4LS4xNDcgNC4wNjkgNC4wNjkgMCAxIDAgMS40MDItNy44OVoiLz4KICAgIDxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEzLjYyNSA4LjQ5OWExLjg3NSAxLjg3NSAwIDEgMSAzLjc1IDAgMS44NzUgMS44NzUgMCAwIDEtMy43NSAwWm0xLjg3NS0uNjI1YS42MjUuNjI1IDAgMSAwIDAgMS4yNS42MjUuNjI1IDAgMCAwIDAtMS4yNVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPgogICAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTQuNjI1IDEyLjEyNWEuNjI1LjYyNSAwIDEgMCAwLTEuMjUuNjI1LjYyNSAwIDAgMCAwIDEuMjVaIi8+Cjwvc3ZnPgo=&quot;) !important; transition: background !important;">
+</center>
+
+<center>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+</center>
+<center>
+                        <label for="Do you have a phone? If yes, what's the brand?">Do you have a phone? If yes, what's the brand?</label>
+        <select id="Do you have a phone? If yes, what's the brand?" name="Do you have a phone? If yes, what's the brand[]" multiple>
+          <option value="Yes, samsung vivo">Yes, samsung vivo</option>
+          <option value="Yes, samsung phone">Yes, samsung phone</option>
+          <option value="Yes, apple">Yes, apple</option>
+          <option value="Yes, classic Nokia">Yes, classic nokia</option>
+          <option value="Yes, Nokia">Yes, nokia</option>
+          <option value="Yes, android">Yes, android</option>
+          <option value="Others...">Others...</option>
+          <option value="No">No</option>
+        </select>
+</center>
+<center>
+                 <label for="Other devices...">Other devices...</label>
+    <select id="Other devices..." name="Other devices[]" multiple>
+        <option value="Windows 11">Windows 11</option>
+        <option value="Windows 10">Windows 10</option>
+        <option value="Windows 9">Windows 9</option>
+        <option value="Windows 8">Windows 8</option>
+        <option value="Windows 7">Windows 7</option>
+        <option value="Windows vista">Windows vista</option>
+        <option value="Windows xp">Windows xp</option>
+        <option value="Windows 0-5">Windows 0-5</option>
+        <option value="MacBooks">MacBooks (regular/pro)</option>
+        <option value="MacBooks Air">MacBooks Air</option>
+        <option value="Ipad">Ipad</option>
+        <option value="smart refrigerator">Smart Refrigerator</option>
+        <option value="Apple vision">Apple Vision (regular/pro)</option>
+        <option value="smartwatch">Smartwatch</option>
+        <option value="berry">Berry</option>
+        <option value="Apple TV">Apple TV</option>
+        <option value="Samsung TV">Samsung TV</option>
+        <option value="Galaxy tab S series">Galaxy Tab S Series</option>
+        <option value="Galaxy tab E series">Galaxy Tab E Series</option>
+        <option value="Galaxy tab pro series">Galaxy Tab Pro Series</option>
+        <option value="Galaxy tab view series">Galaxy Tab View Series</option>
+        <option value="Galaxy tab active series">Galaxy Tab Active Series</option>
+        <option value="Amazon device">Amazon Device</option>
+        <option value="Arcade">Arcade</option>
+        <option value="Playstation4-6">PlayStation 4-6</option>
+        <option value="Playstation0-3">PlayStation 0-3</option>
+        <option value="Kindle">Kindle</option>
+        <option value="Pad">Pad</option>
+        <option value="Nintendo switch">Nintendo Switch</option>
+        <option value="Wii">Wii</option>
+        <option value="linux">linux machine/system</option>
+        <option value="Nasa supercomputer">Nasa supercomputer</option>
+        <option value="Google supercomputer">Google supercomputer</option>
+        <option value="Apple supercomputer">Apple supercomputer</option>
+        <option value="Linux supercomputer">Linux supercomputer</option>
+        <option value="supercomputer">supercomputer</option>
+        <option value="Tesla car">Tesla car</option>
+        <option value="Toyota car">Toyota car</option>
+        <option value="Hyundai car">Hyundai car</option>
+        <option value="Honda car">Honda car</option>
+        <option value="Mercedes Benz">Mercedes Benz</option>
+        <option value="Racecar">Racecar</option>
+        <option value="Smartcar">smartcar</option>
+        <option value="Linux car">linux car</option>
+        <option value="Mac studio">Mac studio</option>
+        <option value="Others...">Others...</option>
+        <option value="I only use a phone (none)">I only use a phone (none)</option>
+    </select>
+</center>
+<center>
+         <label for="Do you use someone's device to do personal activities?">Do you use someone's device to do personal activities?</label>
+        <select id="Do you use someone's device to do personal activities?" name="Do you use someone's device to do personal activities?">
+            <option value="Crazy? I was crazy once. They locked me in a room, a rubber room filled with rats and rats makes me crazy.">⠀</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Kinda">Kinda (e.g: it was originally for my dad etc...)</option>
+        </select>
+</center>
+<center>
+        <!-- All countries -->
+<label for="country">Country</label>
+<select id="country" name="country">
+    <option value="Im crazy" selected></option>
+    <option value="AF" data-values="AFG">Afghanistan</option>
+    <option value="AL" data-values="ALB">Albania</option>
+    <option value="DZ" data-values="DZA">Algeria</option>
+    <option value="AD" data-values="AND">Andorra</option>
+    <option value="AO" data-values="AGO">Angola</option>
+    <option value="AI" data-values="AIA">Anguilla</option>
+    <option value="AR" data-values="ARG">Argentina</option>
+    <option value="AM" data-values="ARM">Armenia</option>
+    <option value="AW" data-values="ABW">Aruba</option>
+    <option value="AU" data-values="AUS">Australia</option>
+    <option value="AT" data-values="AUT">Austria</option>
+    <option value="AZ" data-values="AZE">Azerbaijan</option>
+    <option value="BS" data-values="BHS">Bahamas</option>
+    <option value="BH" data-values="BHR">Bahrain</option>
+    <option value="BD" data-values="BGD">Bangladesh</option>
+    <option value="BB" data-values="BRB">Barbados</option>
+    <option value="BY" data-values="BLR">Belarus</option>
+    <option value="BE" data-values="BEL">Belgium</option>
+    <option value="BZ" data-values="BLZ">Belize</option>
+    <option value="BJ" data-values="BEN">Benin</option>
+    <option value="BM" data-values="BMU">Bermuda</option>
+    <option value="BT" data-values="BTN">Bhutan</option>
+    <option value="BO" data-values="BOL">Bolivia</option>
+    <option value="BW" data-values="BWA">Botswana</option>
+    <option value="BR" data-values="BRA">Brazil</option>
+    <option value="BG" data-values="BGR">Bulgaria</option>
+    <option value="BI" data-values="BDI">Burundi</option>
+    <option value="KH" data-values="KHM">Cambodia</option>
+    <option value="CM" data-values="CMR">Cameroon</option>
+    <option value="CA" data-values="CAN">Canada</option>
+    <option value="TD" data-values="TCD">Chad</option>
+    <option value="CL" data-values="CHL">Chile</option>
+    <option value="CN" data-values="CHN">China</option>
+    <option value="CO" data-values="COL">Colombia</option>
+    <option value="KM" data-values="COM">Comoros</option>
+    <option value="HR" data-values="HRV">Croatia</option>
+    <option value="CU" data-values="CUB">Cuba</option>
+    <option value="CW" data-values="CUW">Curaçao</option>
+    <option value="CY" data-values="CYP">Cyprus</option>
+    <option value="DK" data-values="DNK">Denmark</option>
+    <option value="DJ" data-values="DJI">Djibouti</option>
+    <option value="EC" data-values="ECU">Ecuador</option>
+    <option value="EG" data-values="EGY">Egypt</option>
+    <option value="ER" data-values="ERI">Eritrea</option>
+    <option value="EE" data-values="EST">Estonia</option>
+    <option value="SZ" data-values="SWZ">Eswatini</option>
+    <option value="ET" data-values="ETH">Ethiopia</option>
+    <option value="FK" data-values="FLK">Malvinas</option>
+    <option value="FJ" data-values="FJI">Fiji</option>
+    <option value="FI" data-values="FIN">Finland</option>
+    <option value="FR" data-values="FRA">France</option>
+    <option value="GA" data-values="GAB">Gabon</option>
+    <option value="GM" data-values="GMB">Gambia</option>
+    <option value="GE" data-values="GEO">Georgia</option>
+    <option value="DE" data-values="DEU">Germany</option>
+    <option value="GH" data-values="GHA">Ghana</option>
+    <option value="GI" data-values="GIB">Gibraltar</option>
+    <option value="GR" data-values="GRC">Greece</option>
+    <option value="GL" data-values="GRL">Greenland</option>
+    <option value="GD" data-values="GRD">Grenada</option>
+    <option value="GP" data-values="GLP">Guadeloupe</option>
+    <option value="GU" data-values="GUM">Guam</option>
+    <option value="GT" data-values="GTM">Guatemala</option>
+    <option value="GG" data-values="GGY">Guernsey</option>
+    <option value="GN" data-values="GIN">Guinea</option>
+    <option value="GW" data-values="GNB">Guinea-Bissau</option>
+    <option value="GY" data-values="GUY">Guyana</option>
+    <option value="HT" data-values="HTI">Haiti</option>
+    <option value="HN" data-values="HND">Honduras</option>
+    <option value="HU" data-values="HUN">Hungary</option>
+    <option value="IS" data-values="ISL">Iceland</option>
+    <option value="IN" data-values="IND">India</option>
+    <option value="ID" data-values="IDN">Indonesia</option>
+    <option value="IR" data-values="IRN">Iran</option>
+    <option value="IQ" data-values="IRQ">Iraq</option>
+    <option value="IE" data-values="IRL">Ireland</option>
+    <option value="IT" data-values="ITA">Italy</option>
+    <option value="JM" data-values="JAM">Jamaica</option>
+    <option value="JP" data-values="JPN">Japan</option>
+    <option value="JE" data-values="JEY">Jersey</option>
+    <option value="JO" data-values="JOR">Jordan</option>
+    <option value="KZ" data-values="KAZ">Kazakhstan</option>
+    <option value="KE" data-values="KEN">Kenya</option>
+    <option value="KI" data-values="KIR">Kiribati</option>
+    <option value="XK" data-values="XKX">Kosovo</option>
+    <option value="KW" data-values="KWT">Kuwait</option>
+    <option value="KG" data-values="KGZ">Kyrgyzstan</option>
+    <option value="LV" data-values="LVA">Latvia</option>
+    <option value="LB" data-values="LBN">Lebanon</option>
+    <option value="LS" data-values="LSO">Lesotho</option>
+    <option value="LR" data-values="LBR">Liberia</option>
+    <option value="LY" data-values="LBY">Libya</option>
+    <option value="LI" data-values="LIE">Liechtenstein</option>
+    <option value="LT" data-values="LTU">Lithuania</option>
+    <option value="LU" data-values="LUX">Luxembourg</option>
+    <option value="MO" data-values="MAC">Macao</option>
+    <option value="MG" data-values="MDG">Madagascar</option>
+    <option value="MW" data-values="MWI">Malawi</option>
+    <option value="MY" data-values="MYS">Malaysia</option>
+    <option value="MV" data-values="MDV">Maldives</option>
+    <option value="ML" data-values="MLI">Mali</option>
+    <option value="MT" data-values="MLT">Malta</option>
+    <option value="MQ" data-values="MTQ">Martinique</option>
+    <option value="MR" data-values="MRT">Mauritania</option>
+    <option value="MU" data-values="MUS">Mauritius</option>
+    <option value="YT" data-values="MYT">Mayotte</option>
+    <option value="MX" data-values="MEX">Mexico</option>
+    <option value="FM" data-values="FSM">Micronesia</option>
+    <option value="MD" data-values="MDA">Moldova</option>
+    <option value="MC" data-values="MCO">Monaco</option>
+    <option value="MN" data-values="MNG">Mongolia</option>
+    <option value="ME" data-values="MNE">Montenegro</option>
+    <option value="MS" data-values="MSR">Montserrat</option>
+    <option value="MA" data-values="MAR">Morocco</option>
+    <option value="MZ" data-values="MOZ">Mozambique</option>
+    <option value="NA" data-values="NAM">Namibia</option>
+    <option value="NR" data-values="NRU">Nauru</option>
+    <option value="NP" data-values="NPL">Nepal</option>
+    <option value="NL" data-values="NLD">Netherlands</option>
+    <option value="NI" data-values="NIC">Nicaragua</option>
+    <option value="NE" data-values="NER">Niger</option>
+    <option value="NG" data-values="NGA">Nigeria</option>
+    <option value="NU" data-values="NIU">Niue</option>
+    <option value="NO" data-values="NOR">Norway</option>
+    <option value="OM" data-values="OMN">Oman</option>
+    <option value="PK" data-values="PAK">Pakistan</option>
+    <option value="PW" data-values="PLW">Palau</option>
+    <option value="PS" data-values="PSE">Palestine</option>
+    <option value="PA" data-values="PAN">Panama</option>
+    <option value="PY" data-values="PRY">Paraguay</option>
+    <option value="PE" data-values="PER">Peru</option>
+    <option value="PH" data-values="PHL">Philippines</option>
+    <option value="PL" data-values="POL">Poland</option>
+    <option value="PT" data-values="PRT">Portugal</option>
+    <option value="QA" data-values="QAT">Qatar</option>
+    <option value="RE" data-values="REU">Reunion</option>
+    <option value="RO" data-values="ROM">Romania</option>
+    <option value="RW" data-values="RWA">Rwanda</option>
+    <option value="WS" data-values="WSM">Samoa</option>
+    <option value="SA" data-values="SAU">Saudi Arabia</option>
+    <option value="SN" data-values="SEN">Senegal</option>
+    <option value="RS" data-values="SRB">Serbia</option>
+    <option value="SC" data-values="SYC">Seychelles</option>
+    <option value="SG" data-values="SGP">Singapore</option>
+    <option value="SK" data-values="SVK">Slovakia</option>
+    <option value="SI" data-values="SVN">Slovenia</option>
+    <option value="SO" data-values="SOM">Somalia</option>
+    <option value="ES" data-values="ESP">Spain</option>
+    <option value="SD" data-values="SDN">Sudan</option>
+    <option value="SR" data-values="SUR">Suriname</option>
+    <option value="SE" data-values="SWE">Sweden</option>
+    <option value="CH" data-values="CHE">Switzerland</option>
+    <option value="SY" data-values="SYR">Syria</option>
+    <option value="TW" data-values="TWN">Taiwan</option>
+    <option value="TJ" data-values="TJK">Tajikistan</option>
+    <option value="TZ" data-values="TZA">Tanzania</option>
+    <option value="TH" data-values="THA">Thailand</option>
+    <option value="TL" data-values="TLS">Timor-Leste</option>
+    <option value="TG" data-values="TGO">Togo</option>
+    <option value="TK" data-values="TKL">Tokelau</option>
+    <option value="TO" data-values="TON">Tonga</option>
+    <option value="TN" data-values="TUN">Tunisia</option>
+    <option value="TR" data-values="TUR">Turkey</option>
+    <option value="TM" data-values="TKM">Turkmenistan</option>
+    <option value="TV" data-values="TUV">Tuvalu</option>
+    <option value="UG" data-values="UGA">Uganda</option>
+    <option value="UA" data-values="UKR">Ukraine</option>
+    <option value="GB" data-values="GBR">UK</option>
+    <option value="US" data-values="USA">USA</option>
+    <option value="UY" data-values="URY">Uruguay</option>
+    <option value="UZ" data-values="UZB">Uzbekistan</option>
+    <option value="VU" data-values="VUT">Vanuatu</option>
+    <option value="VE" data-values="VEN">Venezuela</option>
+    <option value="VN" data-values="VNM">Vietnam</option>
+    <option value="YE" data-values="YEM">Yemen</option>
+    <option value="ZM" data-values="ZMB">Zambia</option>
+    <option value="ZW" data-values="ZWE">Zimbabwe</option>
+</select>
+</center>
+<p>.</p>
+<center>
+                <button type="submit" class="submit-button">Sign Up</button>
+            </form>
+        </div>
+    </section>
+</center>
+<p>⠀⠀</p>
+        <p>⠀⠀</p>
+        <p>⠀⠀</p>
+<a href="https://forms.gle/oRNp8xeekdjwGyDA6">procedurality@altmails.com</a>
+    <section class="contact-info">
+        <address>
+        </address>
+    </section>
+<center>
+<p> NOTE: Please click the "submit" button four times if it's loading for more than 2 seconds! </p>
+<p> NOTE: For desktop users, please hold the "CTRL" button if you want to choose more than one option! </p>
+<p> NOTE: Reviews are usually between 8 PM to 9PM GMT+7. </p>
+</center>
+
+    <footer class="footer">
+    <!-- in JG, replace the "index.html" to "othersforfun.html" -->
+    <center>
+<p>
+ <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='index.html';">Home</button>
+
+   <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='pay.html';">Payment</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border
+     : 0px; color: white; border-radius: 5px;" onclick="location.href='contact.html';">Contact</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='blog.html';">Blog</button>
+
+     <button name="checkout" style="font-weight: 600; background-color: rgb(6, 105, 211); border: 0px; color: white; border-radius: 5px;" onclick="location.href='index.html';">install</button>
+      </p>
+    </center>
+ <p>Subscribe to our newsletter to receive updates:</p>
+ <div class="footer-2">
+        <form action="https://formsubmit.co/proceduralitytutorials@gmail.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+        <div class="center-text">
+            <p>this website is far from perfection.</p>
+            <p> 2024 proceduralitytutorials@gmail.com. All rights reserved.</p>
+        </div>
+ </div>
+</footer>
+<script> document.querySelector(".submit-button").addEventListener("click", function() { alert("Account created 🎉");
+window.location.href = "freeaccount.html";
+ }); </script>
+</html>
